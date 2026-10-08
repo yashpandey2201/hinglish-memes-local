@@ -1,0 +1,10 @@
+# Python 3.9 - 3.12 recommended
+torch
+torchvision
+transformers>=4.40
+numpy
+pandas
+scikit-learn
+matplotlib
+pillow
+tqdm

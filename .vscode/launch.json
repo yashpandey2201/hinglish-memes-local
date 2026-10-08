@@ -1,0 +1,45 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "0. Check setup",
+      "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/train.py",
+      "args": ["--check"], "console": "integratedTerminal"
+    },
+    {
+      "name": "1. Quick test (sample images, text)",
+      "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/train.py",
+      "args": ["--model", "text", "--task", "A", "--samples", "--epochs", "2"], "console": "integratedTerminal"
+    },
+    {
+      "name": "Text only - Task A (sentiment)",
+      "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/train.py",
+      "args": ["--model", "text", "--task", "A"], "console": "integratedTerminal"
+    },
+    {
+      "name": "Image only - Task A (sentiment)",
+      "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/train.py",
+      "args": ["--model", "image", "--task", "A"], "console": "integratedTerminal"
+    },
+    {
+      "name": "Multimodal - Task A (sentiment)",
+      "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/train.py",
+      "args": ["--model", "multimodal", "--task", "A"], "console": "integratedTerminal"
+    },
+    {
+      "name": "Text only - Task B (emotions)",
+      "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/train.py",
+      "args": ["--model", "text", "--task", "B"], "console": "integratedTerminal"
+    },
+    {
+      "name": "Image only - Task B (emotions)",
+      "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/train.py",
+      "args": ["--model", "image", "--task", "B"], "console": "integratedTerminal"
+    },
+    {
+      "name": "Multimodal - Task B (emotions)",
+      "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/train.py",
+      "args": ["--model", "multimodal", "--task", "B"], "console": "integratedTerminal"
+    }
+  ]
+}
